@@ -1,0 +1,223 @@
+.fullscreen {
+    display: block;
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    /* filter: brightness(0.7); */
+    object-position: top;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+.fullscreen-on {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* filter: brightness(0.7); */
+    object-position: top;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+body {
+    
+     background: #E8E6E2;
+    color:#373636;
+    font-family: garamond;
+    font-weight: 800;
+}
+
+.navbar-collapse {
+    transition: all .5s;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-after-scroll {
+    background-color: #917F69;
+}
+
+.dropdown-menu {
+    background:transparent;
+}
+
+.dropdown-menu:focus {
+    color:white;
+}
+
+.item {
+    color:rgb(30, 30, 30);
+}
+.item:hover {
+    color:rgb(0, 0, 0);
+}
+
+.item-img:hover {
+    filter: brightness(0.9);
+}
+
+/*Dropdown menu */ 
+.bg-glass {
+    backdrop-filter: blur(var(--bs-bg-glass-blur, 1em)) saturate(var(--bs-bg-glass-saturation, 150%));
+ }
+ 
+ .dropdown-menu {
+    background-color: rgba(198, 198, 198, 0.453);
+   --bs-dropdown-bg: rgba(var(--bs-body-bg), var(--bs-bg-opacity, 1));
+ }
+
+ .bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+/*Zoom du carousel */
+
+.zoom {
+    overflow:hidden;
+    transition: transform .5s ease;
+}
+
+.zoom:hover {
+    transform:scale(1.2);
+}
+
+/*Titres entourés */ 
+
+.container-border {
+
+        position: relative;
+        padding: 1px;
+        background: linear-gradient(to right, transparent, #ffc973, transparent);
+        border: 20px solid transparent; /* Utilisé pour l'espacement autour */
+        background-clip: padding-box;
+ 
+
+}
+
+/*underline progressif navbar */
+
+.progressive-underline {
+    position: relative;
+    text-decoration: none; /* Enlève le soulignement par défaut */
+}
+
+.progressive-underline::after {
+    content: ""; /* Nécessaire pour ::after */
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    width: 0; /* Commence avec une largeur de 0 */
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #70040F; /* Couleur du soulignement */
+    transition: width 0.3s ease; /* Transition pour l'effet progressif */
+}
+
+.progressive-underline:hover::after {
+    width: 90%; /* Étend la largeur de la ligne sur tout l'élément */
+}
+
+.progressive-underline-title {
+    position: relative;
+    text-decoration: none; /* Enlève le soulignement par défaut */
+}
+
+.progressive-underline-title::after {
+    content: ""; /* Nécessaire pour ::after */
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    width: 0; /* Commence avec une largeur de 0 */
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #70040F; /* Couleur du soulignement */
+    transition: width 0.3s ease; /* Transition pour l'effet progressif */
+}
+
+.progressive-underline-title:hover::after {
+    width: 85%; /* Étend la largeur de la ligne sur tout l'élément */
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2.0s forwards;
+    transform: translateX(20px);
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 5.0s forwards;
+}
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+    
+}
+
+
+.hidden-text {
+    opacity: 0; /* Complètement invisible au départ */
+    /*transform: translateX(100px); */
+    transition: opacity 2.0s ease-out, transform 0.8s ease-out; /* Animation douce */
+}
+
+.hidden-text.visible {
+    opacity:1;
+    box-shadow: 0 5px 5px rgba(0,0,0,.5);
+    /*transform: translateX(0);*/ /* Remonte à sa position normale */
+}
+
+
+/*bento grid*/
+.bento-item {
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.bento-item:hover {
+    transform: scale(1.05);
+}
+
+.bento-tall {
+    height: 410px;
+}
+
+.bento-50 {
+    height:305px;
+}
+
+.bento-img {
+    object-fit: cover;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    border-radius: 15px;
+}
+
+.bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.847)), url('cave_bout.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+}

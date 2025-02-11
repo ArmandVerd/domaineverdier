@@ -1,0 +1,48 @@
+.box
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #C9BAA4;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    transition: .5s;
+    margin-bottom: 10%;
+}
+
+.box:hover
+{
+    transform: translateY(-30px);
+    box-shadow: 0 50px 50x rgba(0,0,0,.5);
+}
+
+.box .imgbox img
+{
+    transition: .5s;
+}
+
+.box:hover .imgbox img
+{
+    opacity: .5;
+    transform: translateY(-10px);
+}
+
+.box .content
+{
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+    
+}
+
+.box:hover .content
+{
+    opacity: 1;
+    top: 20px;
+}
+
+.box .content p
+{
+    color: #191919;
+}
+
