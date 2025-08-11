@@ -31,6 +31,30 @@ body {
     font-weight: 800;
 }
 
+.font-cursive {
+    font-family: "MonteCarlo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+    padding: 25px 0;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+.shadow {
+    box-shadow: 0 5px 5px rgba(0,0,0,.5);
+}
+
+.navbar.scrolled {
+    padding: 8px 0;
+    background: rgba(145, 127, 105) !important;
+}
+
 .navbar-collapse {
     transition: all .5s;
 }
