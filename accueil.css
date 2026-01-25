@@ -120,6 +120,29 @@ body {
     transform:scale(1.2);
 }
 
+/* Responsive: on medium and smaller screens place the text block below the photo */
+@media (max-width: 991.98px) {
+    .bg-image {
+        height: auto !important;
+        display: block !important;
+    }
+
+    .bg-image img.position-absolute {
+        position: relative !important;
+        width: 100%;
+        height: auto !important;
+        object-fit: cover;
+    }
+
+    /* make the text container flow after the image */
+    .bg-image .position-relative {
+        position: static !important;
+        transform: none !important;
+        margin: 1rem auto !important;
+        max-width: 95% !important;
+    }
+}
+
 /*Titres entourés */ 
 
 .container-border {
