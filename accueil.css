@@ -1,4 +1,14 @@
 /* Fixe la largeur du carousel pour éviter les sauts lors des transitions */
+@font-face {
+    font-family: 'Trado';
+    src: url('trado.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Aston';
+    src: url('Aston.otf') format('opentype');
+}
+
 .carousel-acceuil {
     max-width: 250px;
     width: 100%;
@@ -31,17 +41,22 @@
   }
 
 body {
-    
-     background: #E8E6E2;
+    background: url('Arrière Plan - Opacité 60.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color:#373636;
     font-family: garamond;
     font-weight: 800;
 }
 
-.font-cursive {
-    font-family: "MonteCarlo", cursive;
-    font-weight: 400;
-    font-style: normal;
+.font-trado {
+    font-family: 'Trado';
+}
+
+.font-aston {
+    font-family: 'Aston';
 }
 
 .navbar {
