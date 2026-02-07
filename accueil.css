@@ -237,6 +237,19 @@ body {
     
 }
 
+.cv-text {
+    animation: fadeIn 10.0s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
 
 .hidden-text {
     opacity: 0; /* Complètement invisible au départ */
